@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+
+    .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto; /* не растягивается */
+}
+
+.logo-img {
+  width: 36px;
+  height: 28px;
+}
+
+.logo-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+/* Переводчик компактный */
+.translate-widget {
+  margin-left: 15px;
+  flex: 0 0 auto;
+}
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+    <div class="header">
+  <nav class="nav-links">
+    <a href="index.php">Анекдоты</a>
+    <a href="videos.php">Видео</a>
+    <a href="riddles.php">Загадки</a>
+    <a href="stories.php">Истории</a>
+    <a href="images.php">Картинки</a>
+    <a href="jokes.php">Шутки</a>
+  </nav>
+
+  <!-- Логотип -->
+  <a href="/" class="logo-link">
+    <img src="logo.png" alt="Logo" class="logo-img">
+    <span class="logo-text">GiggleNest</span>
+  </a>
+
+  <!-- Переключатель языков -->
+  <div id="gtranslate" class="translate-widget"></div>
+
+  <!-- Бургер -->
+  <button class="menu-toggle">☰</button>
+</div>
+
+
+
+
+
+
+<script>
+  window.gtranslateSettings = {
+    default_language: "ru",
+    languages: ["en","de","uk","fr","it","es","ru","zh-CN"],
+    wrapper_selector: "#gtranslate",
+    horizontal_position: "inline", // встроенный режим
+    vertical_position: "inline"    // без float, прямо в хедере
+  };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,405 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  
+  padding: 10px;
+  background: #2563eb;
+  color: #fff;
+  z-index: 1000;
+}
+
+
+.header h1{
+  text-align: center;
+  color: #f1e210;
+ font-size: 20px;
+}
+.nav {
+  background: #eee;
+  padding: 20px;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Бургер */
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2563eb;
+}
+
+/* 📱 Мобильная версия */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+  .nav-links.active {
+    max-height: 300px;
+    padding-top: 10px;
+  }
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.project {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+.project img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #2563eb;
+  color: #fff;
+}
+
+
+
+ .phone-form-wrapper {
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: 'Didact Gothic', sans-serif;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .phone-form-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .phone-form-wrapper td {
+    padding: 10px;
+    vertical-align: middle;
+  }
+
+  .phone-form-wrapper input[type="tel"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: #fff;
+  }
+
+  .phone-form-wrapper button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .phone-form-wrapper button:hover {
+    background-color: #45a049;
+  }
+
+  @media (max-width: 480px) {
+    .phone-form-wrapper td {
+      display: block;
+      width: 100%;
+    }
+
+    .phone-form-wrapper button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  
+
+/* Общий контейнер формы */
+#order {
+  max-width: 500px;          /* ширина формы */
+  min-height: 300px;
+  margin: 30px auto;         /* центрирование */
+  padding: 20px;
+  background: #f9f9f9;       /* светлый фон */
+  border: 1px solid #ddd;    /* рамка */
+  border-radius: 8px;        /* скруглённые углы */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* лёгкая тень */
+}
+
+/* Заголовок */
+#order h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Метки */
+#order label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Поля ввода */
+#order input[type="text"],
+#order input[type="email"],
+#order textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+/* Фокус на поле */
+#order input:focus,
+#order textarea:focus {
+  border-color: #0073e6;     /* подсветка при фокусе */
+  outline: none;
+}
+
+/* Кнопка */
+#order button {
+  width: 100%;
+  padding: 12px;
+  background: #0073e6;       /* синий фон */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Ховер на кнопке */
+#order button:hover {
+  background: #005bb5;       /* более тёмный при наведении */
+}
+
+
+
+/* 📱 Телефон до 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;          /* чуть меньше текст */
+    line-height: 1.4;
+  }
+
+  .header {
+    padding: 20px;            /* меньше отступ */
+    font-size: 18px;          /* уменьшенный размер шрифта */
+  }
+
+  .nav {
+    padding: 8px;
+  }
+
+  .nav-links {
+    flex-direction: column;   /* ссылки в колонку */
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 0 10px;          /* меньше боковые отступы */
+  }
+
+  section {
+    margin-bottom: 25px;
+  }
+
+  .project {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .project img {
+    border-radius: 4px;
+  }
+
+  .footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  /* Форма телефона */
+  .phone-form-wrapper {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .phone-form-wrapper input[type="tel"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .phone-form-wrapper button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Форма заказа */
+  #order {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  #order h2 {
+    font-size: 18px;
+  }
+
+  #order input[type="text"],
+  #order input[type="email"],
+  #order textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  #order button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+
+.phone-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.phone-btn {
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: auto;
+}
+
+.phone-list {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  min-width: 180px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.phone-list li {
+  padding: 8px 12px;
+}
+
+.phone-list li a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.phone-list li:hover {
+  background: #f0f0f0;
+}
+
+/* Показать список при наведении */
+.phone-dropdown:hover .phone-list {
+  display: block;
+}
+
+/* 📱 Адаптивность для телефона */
+@media (max-width: 480px) {
+  .phone-dropdown {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .phone-btn {
+    width: 100%;          /* кнопка на всю ширину */
+    font-size: 18px;      /* крупнее текст */
+    padding: 12px;
+  }
+
+  .phone-list {
+    position: static;     /* убираем абсолютное позиционирование */
+    width: 100%;          /* список на всю ширину */
+    box-shadow: none;
+    border: none;
+  }
+
+  .phone-list li {
+    text-align: center;   /* телефоны по центру */
+    padding: 12px;
+  }
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Портфолио — Дима</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Привет! Я Дима 👋</h1>
+    <h1>Создаю удобные и красивые сайты, которые работают для людей 👋</h1>
+</header>
+
+<!-- Навигация -->
+<nav class="nav">
+  <button class="menu-toggle">☰</button>
+  <div class="nav-links">
+    <a href="#skills">Навыки</a>
+    <a href="#projects">Проекты</a>
+    <a href="#about">О себе</a>
+    <a href="#contacts">Контакты</a>
+  </div>
+
+</nav>
+
+
+
+<main>
+  <!-- Навыки -->
+  <section id="skills">
+    <h2>Навыки</h2>
+    <ul>
+      <li>PHP, HTML, CSS, JavaScript</li>
+      <li>UI/UX дизайн, адаптивная верстка</li>
+      <li>Работа с хостингом, DNS, доменами</li>
+      <li>Создание админ‑панелей, регистрация/логин</li>
+      <li>Мультиязычность, интеграция платёжных систем</li>
+    </ul>
+  </section>
+
+  <!-- Проекты -->
+  <section id="projects">
+
+<div class="project">
+  <a href="http://gigglenest.online/" target="_blank">
+    <h3>GiggleNest</h3>
+    <img src="а.png" alt="Сайт с юмором, видео" />
+  </a>
+</div>
+
+
+
+<div class="project">
+  <a href="http://gigglenest.online/" target="_blank">
+    <h3>GiggleNest</h3>
+    <img src="в.png" alt="Сайт с юмором, видео, картинками и админкой." />
+  </a>
+</div>
+
+
+
+
+
+<div class="project">
+    <a href="http://anekdots-anekdots-anekdots.atwebpages.com" target="_blank">
+    <h3>Центр краси "Образ"</h3>
+    <img src="c.png" alt="Центр краси 'Образ'" />
+  </a>
+</div>
+
+
+
+<div class="project">
+  <a href="https://dima-zp.github.io/my-landing-page/" target="_blank">
+    <h3>Ваши свежие фрукти под заказ"</h3>
+    <img src="р.png" alt="Ваши свежие фрукти под заказ" />
+  </a>
+</div>
+
+
+<div class="project">
+  <a href="https://dima-zp.github.io/project4/#" target="_blank">
+    <h3>НАША МІСІЯ фінансово незалежне підприємство від виробників</h3>
+    <img src="кк.png" alt="НАША МІСІЯ фінансово незалежне" />
+  </a>
+</div>
+
+<div class="project">
+  <a href="https://dima-zp.github.io/project9/" target="_blank">
+    <h3>НАША МІСІЯ фінансово незалежне підприємство від виробників</h3>
+    <img src="ккк.png" alt="НАША МІСІЯ фінансово незалежне" />
+  </a>
+</div>
+
+
+
+
+<div class="phone-form-wrapper">
+  <form action="https://formspree.io/f/mzzyzbwl" method="POST">
+    <table>
+      <tbody><tr>
+        <td colspan="2"><strong>Введите свой номер телефона и Вам перезвоним:</strong></td>
+      </tr>
+      <tr>
+        <td>
+          <input type="tel" name="phone" placeholder="+38 (0XX) XXX-XX-XX" autocomplete="tel" required="">
+        </td>
+        <td>
+          <button type="submit">Отправить</button>
+        </td>
+      </tr>
+    </tbody></table>
+  </form>
+</div>
+
+
+<section id="order">
+  <h2>Оставить.......</h2>
+ <form action="https://formspree.io/f/mzzyzbwl" method="POST">
+    <label>Имя:<br><input type="text" name="name" required=""></label><br><br>
+    <label>Email:<br><input type="email" name="email" required=""></label><br><br>
+    <label>Ваша форма:<br><textarea name="message" rows="5"></textarea></label><br><br>
+    <input type="hidden" name="_next" value="https://твой-сайт/thanks.html">
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+
+
+  </section>
+
+  <!-- О себе -->
+  <section id="about">
+    <h2>О себе</h2>
+    <p> 
+      Люблю быстрые прототипы, пошаговое улучшение и всегда делаю
+       бэкапы перед изменениями.
+      Работаю медленно с огоньком и до 8-го пота... (ст-ть работ мин. мне нужен опыт работ...)
+      </p>
+    
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts">
+    <h2>Контакты</h2>
+    <p>Email: <a href="betsdima13@gmail.com">betsdima13@gmail.com</a></p>
+    <p>Telegram: <a href="https://t.me/username">@username</a></p>
+    <p>GitHub: <a href="https://github.com/dima-zp/">https://github.com/dima-zp/</a></p>
+
+      <div class="phone-dropdown">
+  <button class="phone-btn">📞 Онлайн консультації</button>
+  <ul class="phone-list">
+    <li><a href="tel:+380674275269"> tel:+380674250269</a></li>
+    <li><a href="tel:+380674250269"> tel:+380674250269 </a></li>
+    <li><a href="tel:+380674220169"> tel:+380674250269 </a></li>
+  </ul>
+</div>
+  </section>
+
+
+<!-- Блок для виджета -->
+<div id="gtranslate"></div>
+
+</main>
+
+
+
+
+
+
+
+
+<script>
+    function openCallbackForm() {
+      document.getElementById("openCallbackForm").style.display = "block";
+    }
+    function closeCallbackForm() {
+      document.getElementById("openCallbackForm").style.display = "none";
+    }
+  </script>
+
+
+
+<script>
+function openCallbackForm() {
+  const modal = document.getElementById('btn-zapis');
+  // если модалка скрыта — показать, если показана — скрыть
+  if (modal.style.display === "block") {
+    modal.style.display = "none";
+  } else {
+    modal.style.display = "block";
+  }
+}
+
+// закрытие при клике вне модалки
+window.onclick = function(event) {
+  const modal = document.getElementById('btn-zapis');
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+<script>
+
+  const phoneForm = document.getElementById("phone-form");
+
+phoneForm.addEventListener("submit", async function(e) {
+  e.preventDefault();
+  const data = new FormData(phoneForm);
+  const response = await fetch(phoneForm.action, {
+    method: phoneForm.method,
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  });
+  if (response.ok) {
+    alert("Дякуємо! Ми скоро Вам зателефонуємо.");
+    phoneForm.reset(); // очищает все поля формы
+  } else {
+    alert("Помилка при відправці форми");
+  }
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Настройки -->
+<script>
+  window.gtranslateSettings = {
+    default_language: "ru", // язык по умолчанию
+    languages: ["en","de","uk","fr","it","es","ru","zh-CN","el"], // список доступных языков
+    wrapper_selector: "#gtranslate", // куда вставить виджет
+    horizontal_position: "right",    // горизонтальное положение
+    vertical_position: "bottom"      // вертикальное положение
+  };
+</script>
+
+<!-- Подключение скрипта -->
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+
+
+
+<footer class="footer">
+  <p>© 2026 Дима. Все права защищены.</p>
+</footer>
+
+<script src="menu.js"></script>
+
+
+
+
+
+
+</body>
+</html>

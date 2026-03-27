@@ -403,3 +403,44 @@ section {
     padding: 12px;
   }
 }
+
+
+
+
+
+
+
+.go-top {
+  position: fixed; 
+  top: 500px;
+  right: 30px; 
+  width: 40px;
+  height: 40px;
+  border-radius: 30%; /* круглая форма */
+  background: #007BFF;
+  border: none;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 999; /* чтобы не перекрывалась */
+}
+.go-top:hover {
+  background: #1e4fc1;
+  transform: scale(1.1); /* лёгкое увеличение при наведении */
+}
+.go-top svg {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+

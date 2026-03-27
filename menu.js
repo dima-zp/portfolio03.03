@@ -11,9 +11,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+	const goTopBtn = document.getElementById("goTopBtn");
+
+// показываем кнопку при прокрутке
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    goTopBtn.style.display = "block";
+  } else {
+    goTopBtn.style.display = "none";
+  }
+});
+
+// плавный скролл вверх
+goTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 
- 
+
 
 
 
